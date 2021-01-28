@@ -2,7 +2,7 @@
   "name": "nest-starter",
   "private": true,
   "scripts": {
-    "start": "cross-env TZ=UTC mono-run start:dev --stream 500",
+    "start": "cross-env TZ=UTC mono-run start:dev --stream",
     "lint": "mono-run lint -- . --cache --ext .js,.jsx,.ts,.tsx",
     "test": "cross-env CI=true mono-run test:watch --stream --parallel",
     "clean": "lerna clean",
