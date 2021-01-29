@@ -9,6 +9,7 @@ import { CronService, QueueService } from '@nest-starter/core';
 // import { OrganizationModule } from './app/organization/organization.module';
 
 import { TestingModule } from './app/testing/testing.module';
+import { RuleController } from './rule/rule.controller';
 
 @Module({
   imports: [
@@ -25,7 +26,7 @@ import { TestingModule } from './app/testing/testing.module';
     // HealthModule,
     // AdminModule,
   ],
-  controllers: [],
+  controllers: [RuleController],
   providers: [
     // {
     //   provide: CronService,

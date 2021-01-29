@@ -29,7 +29,7 @@ export async function bootstrap(): Promise<INestApplication> {
     methods: ['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   });
 
-  app.setGlobalPrefix('v1');
+  //   app.setGlobalPrefix('v1');
 
   app.use(passport.initialize());
 
@@ -39,7 +39,7 @@ export async function bootstrap(): Promise<INestApplication> {
     })
   );
 
-  app.useGlobalInterceptors(new ResponseInterceptor());
+  //   app.useGlobalInterceptors(new ResponseInterceptor());
   app.useGlobalGuards(new RolesGuard(app.get(Reflector)));
   app.use(compression());
 
